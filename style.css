@@ -1,0 +1,174 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    position: relative;
+    animation-timing-function: linear;
+}
+
+
+:root {
+    --btn-background-color: #ffc400;
+    --title-color: #ffc400;
+    --btn-text-color: #000;
+    --container-background-color: #000;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+img {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+body {
+    width: auto;
+    height: 100%;
+    margin: auto;
+    font-family: 'Outfit', sans-serif;
+    /* background-color: #ffffff;
+    background-image: url(images/ddd-G-logo-image.png);
+    background-size: 75px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    opacity: 1;
+}
+
+header {
+    width: auto;
+    height: 20%;
+}
+
+h1 {
+    width: 250px;
+    margin: 10px auto;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--title-color);
+}
+
+#main {
+
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer {
+    width: 310px;
+    min-height: 450px;
+    padding: 20px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /*background colour of the central container div*/
+    background-color: var(--container-background-color);
+    border-radius: 20px;
+    box-shadow: 0 5px 10px var(--container-background-color);
+    opacity: 1;
+}
+
+#statusText {
+    width: 200px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
+    border-radius: 10px;
+}
+
+#cellContainer {
+    width: 225px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    background-color: #ffffff3b;
+    border: 1px solid var(--container-background-color);
+
+}
+
+.cell {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border: 1px solid var(--container-background-color);
+    color: #ffffff;
+    font-family: 'Sedgwick Ave Display', cursive;
+    font-size: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+button {
+    width: 150px;
+    margin: auto;
+    padding: 10px 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--btn-text-color);
+    background-color: var(--btn-background-color);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.2);
+    font-size: 18px;
+    transition: 200ms all;
+}
+
+button:focus {
+    transform: scale(1.2);
+    font-size: 18px;
+    transition: 200ms all;
+}
+
+.ddd {
+    margin-top: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ddd img {
+    width: 100px;
+    /* margin-right: 10px;
+    display: block; */
+    text-align: right;
+}
+
+footer {
+    width: 250px;
+    margin: auto;
+    bottom: auto;
+    position: relative;
+}
+
+.contact {
+    margin: 10px auto;
+    text-align: center;
+    font-size: 16px;
+    color: var(--btn-text-color);
+}
