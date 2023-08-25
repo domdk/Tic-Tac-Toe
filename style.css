@@ -11,7 +11,7 @@
     --btn-background-color: #ffc400;
     --title-color: #ffc400;
     --btn-text-color: #000;
-    --container-background-color: #000;
+    --container-background-color: #313131;
 }
 
 html {
@@ -35,13 +35,13 @@ body {
     height: 100%;
     margin: auto;
     font-family: 'Outfit', sans-serif;
-    /* background-color: #ffffff;
-    background-image: url(images/ddd-G-logo-image.png);
+    background-color: #9e9e9e;
+    /* background-image: url(images/ddd-G-logo-image.png);
     background-size: 75px; */
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     height: 100%;
     margin: 0;
     opacity: 1;
@@ -61,7 +61,8 @@ h1 {
 }
 
 #main {
-
+    width: 310px;
+    height: 550px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -100,7 +101,7 @@ h1 {
     margin: 30px auto;
     display: grid;
     grid-template-columns: repeat(3, auto);
-    background-color: #ffffff3b;
+
     border: 1px solid var(--container-background-color);
 
 }
@@ -109,8 +110,9 @@ h1 {
     width: 75px;
     height: 75px;
     margin: auto;
+    background-color: #ffffff3b;
     border: 1px solid var(--container-background-color);
-    color: #ffffff;
+    color: #ffc400;
     font-family: 'Sedgwick Ave Display', cursive;
     font-size: 50px;
     cursor: pointer;
@@ -119,11 +121,15 @@ h1 {
     align-items: center;
 }
 
+.cell:focus {
+    background-color: #aa8b003b;
+}
+
 
 button {
-    width: 150px;
+    width: 100px;
     margin: auto;
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-family: 'Outfit', sans-serif;
     font-size: 16px;
     font-weight: 700;
@@ -135,14 +141,14 @@ button {
 }
 
 button:hover {
-    transform: scale(1.2);
-    font-size: 18px;
+    transform: scale(1.1);
+    /* font-size: 18px; */
     transition: 200ms all;
 }
 
 button:focus {
     transform: scale(1.2);
-    font-size: 18px;
+    /* font-size: 18px; */
     transition: 200ms all;
 }
 
